@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>괴담 생존 아이템 전문 스토어</title>
+  <style>
+    @font-face {
+      font-family: 'Pretendard-Regular';
+      src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    }
+
+    @font-face {
+      font-family: 'ClassicB';
+      src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/%EA%B5%AD%EB%A6%BD%EB%B0%95%EB%AC%BC%EA%B4%80%EB%AC%B8%ED%99%94%EC%9E%AC%EB%8B%A8%ED%81%B4%EB%9E%98%EC%8B%9DB.woff') format('woff');
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Pretendard-Regular', sans-serif;
+      background: #000;
+      color: #eee;
+    }
+
+    /* 네비게이션 바 */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 60px;
+      background: #111;
+      box-shadow: 0 2px 4px rgba(255, 0, 0, 0.2);
+    }
+
+    .logo {
+      font-family: 'ClassicB', serif;
+      font-size: 24px;
+      color: #ff4444;
+    }
+
+    .nav-menu {
+      display: flex;
+      gap: 30px;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .nav-menu a {
+      text-decoration: none;
+      color: #eee;
+    }
+
+    .nav-menu a:hover {
+      color: #ff4444;
+    }
+
+    /* 메인 배너 */
+    .hero {
+      text-align: center;
+      padding: 80px 20px;
+      background-color: #111;
+    }
+
+    .hero h1 {
+      font-family: 'ClassicB', serif;
+      font-size: 36px;
+      color: #ff4444;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      line-height: 1.6;
+      color: #ccc;
+    }
+
+    /* 카드 섹션 */
+    .card-section {
+      padding: 60px 40px;
+      background: #000;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+      justify-content: center;
+    }
+
+    .card {
+      width: 250px;
+      border: 1px solid #444;
+      background: #111;
+      padding: 20px;
+      border-radius: 8px;
+      text-align: center;
+      color: #eee;
+    }
+
+    .card h3 {
+      font-family: 'ClassicB';
+      font-size: 20px;
+      color: #ff4444;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      font-size: 14px;
+      line-height: 1.5;
+      color: #ccc;
+    }
+
+    /* 후기 섹션 */
+    .review-section {
+      padding: 60px 40px;
+      background: #111;
+      color: #eee;
+    }
+
+    .review-section h2 {
+      font-family: 'ClassicB';
+      font-size: 24px;
+      color: #ff4444;
+      margin-bottom: 30px;
+    }
+
+    .review p {
+      font-size: 16px;
+      color: #ccc;
+    }
+
+    /* 푸터 */
+    .footer {
+      background: #111;
+      color: #aaa;
+      padding: 40px 20px;
+      text-align: center;
+      font-size: 14px;
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="logo">GOEDAM 怪談</div>
+    <ul class="nav-menu">
+      <li><a href="#shop">shop</a></li>
+      <li><a href="#home">home</a></li>
+      <li><a href="#intro">intro</a></li>
+      <li><a href="#review">review</a></li>
+    </ul>
+  </nav>
+
+  <header class="hero" id="home">
+    <h1>괴담 생존 아이템 전문 스토어</h1>
+    <p>
+      현대인의 바쁜 일상 속에서도 우리는 괴담으로부터 안전을 지켜야 합니다.<br>
+      지금 바로 당신의 생존 아이템을 준비하세요!
+    </p>
+  </header>
+
+  <section class="card-section" id="shop">
+    <div class="card">
+      <h3>평온 목걸이</h3>
+      <p>외출 시 악령 접근 차단하는 부적 목걸이</p>
+    </div>
+    <div class="card">
+      <h3>불길 제거 스프레이</h3>
+      <p>소금과 정화 성분으로 공간 정화</p>
+    </div>
+    <div class="card">
+      <h3>위험 감지 키링</h3>
+      <p>불길한 기운 감지 시 진동으로 경고!</p>
+    </div>
+  </section>
+
+  <section class="hero" id="intro">
+    <h1>괴담 환경, 당신은 준비되어 있나요?</h1>
+    <p>
+      귀신이 나오는 건물에서 일하거나 혼자 자취하는 당신!<br>
+      한밤중 불쑥 찾아오는 정체불명의 현상들…<br>
+      괴담 생존 키트로 일상을 지켜보세요.
+    </p>
+  </section>
+
+  <section class="review-section" id="review">
+    <h2>실사용자 후기</h2>
+    <div class="review">
+      <p>“예전엔 악몽 때문에 잠을 못 잤는데 이젠 푹 자요!” – 강 모씨</p>
+    </div>
+    <div class="review">
+      <p>“처음엔 반신반의했는데 뿌리고 나서 조용해졌어요.” – 김 모씨</p>
+    </div>
+    <div class="review">
+      <p>“제 뒤에 있던 애가 거울에 비치기 시작했어요ㅎ :)” – 권 모씨</p>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>고객 서비스: mizyy0804@naver.com | 전화: 999-9999-9999</p>
+    <p>사이트 이용 약관 | 개인정보 보호정책 | 쿠키 정책</p>
+    <p>© 괴담종합상회 All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
